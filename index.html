@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container w-95">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" name="lat" id="lat" placeholder="Enter lat">
+            </div>
+            <div class="col-md-12">
+                <input type="text" name="long" id="long" placeholder="Enter long">
+            </div>
+            <div class="col-md-12">
+                <input type="text" name="distance" id="distance" placeholder="Enter distance">
+            </div>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" onClick="getInputs()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function getInputs() {
+            let lat = $("#lat").val()
+            let long = $("#long").val()
+            let dist = $("#distance").val()
+
+            searchClinic(lat, long, dist)
+        }
+
+        function searchClinic(lat, long, distance) {
+            lat = parseFloat(lat);
+            long = parseFloat(long);
+            distance = parseInt(distance);
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            myHeaders.append("Accept", "application/json");
+
+            var raw = JSON.stringify({"latitude":lat,"longitude":long,"distance_in_kms":distance});
+
+            var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+            };
+
+            fetch("http://127.0.0.1:5000/search", requestOptions)
+            .then(response => response.json())
+            .then(result => {
+                console.log(result);
+                console.log(typeof(result));
+                const clinic_data = result.data // will hold data to further manipulate stuff.
+                console.log(typeof(clinic_data))
+                for(let i = 0; i < clinic_data.length; i++) {
+                    alert("CLinic name: " + clinic_data[i].clinic_name + " at " + clinic_data[i].clinic_city);
+                }
+            })
+            .catch(error => console.log('error', error));
+        }
+    </script>
+</body>
+</html>

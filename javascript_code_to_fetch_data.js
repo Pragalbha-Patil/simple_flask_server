@@ -14,7 +14,7 @@ var requestOptions = {
 };
 
 fetch("http://127.0.0.1:5000/search", requestOptions)
-  .then(response => response.text())
+  .then(response => response.json())
   .then(result => {
       console.log(result);
       const clinic_data = result.data // will hold data to further manipulate stuff.
