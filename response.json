@@ -1,0 +1,117 @@
+{
+  "data": [
+    {
+      "clinic_city": "Virar", 
+      "clinic_lat": 19.4522, 
+      "clinic_long": 72.8078, 
+      "clinic_name": "Dr. P. Vinay Rao Clinic"
+    }, 
+    {
+      "clinic_city": "Virar", 
+      "clinic_lat": 19.402, 
+      "clinic_long": 72.8387, 
+      "clinic_name": "The Heart Clinic"
+    }, 
+    {
+      "clinic_city": "Borivali", 
+      "clinic_lat": 19.2161, 
+      "clinic_long": 72.8488, 
+      "clinic_name": "ACE Heart Clinic"
+    }, 
+    {
+      "clinic_city": "Borivali", 
+      "clinic_lat": 19.2279, 
+      "clinic_long": 72.8477, 
+      "clinic_name": "Madhavbaug Clinic"
+    }, 
+    {
+      "clinic_city": "Dahisar", 
+      "clinic_lat": 19.2539, 
+      "clinic_long": 72.8584, 
+      "clinic_name": "Cardicare Preventive Heart Clinic"
+    }, 
+    {
+      "clinic_city": "Kurla", 
+      "clinic_lat": 19.0865, 
+      "clinic_long": 72.8879, 
+      "clinic_name": "Anjana Heart Clinic And Diagnostic Center"
+    }, 
+    {
+      "clinic_city": "Vile Parle", 
+      "clinic_lat": 19.0973, 
+      "clinic_long": 72.8499, 
+      "clinic_name": "Saaol Heart Center"
+    }, 
+    {
+      "clinic_city": "Kandivali", 
+      "clinic_lat": 19.21, 
+      "clinic_long": 72.8671, 
+      "clinic_name": "HRUDAY HEART CARE "
+    }, 
+    {
+      "clinic_city": "Mulund", 
+      "clinic_lat": 19.1757, 
+      "clinic_long": 72.9526, 
+      "clinic_name": "Daxini Heart Center"
+    }, 
+    {
+      "clinic_city": "Ghatkopar", 
+      "clinic_lat": 19.0824, 
+      "clinic_long": 72.9052, 
+      "clinic_name": "Varun Cardiac Clinic"
+    }, 
+    {
+      "clinic_city": "Chembur", 
+      "clinic_lat": 19.0695, 
+      "clinic_long": 72.9038, 
+      "clinic_name": "Mumbai Heart Clinic"
+    }, 
+    {
+      "clinic_city": "Vile Parle", 
+      "clinic_lat": 19.1059, 
+      "clinic_long": 72.841, 
+      "clinic_name": "Healing Hearts Cardiac Clinic"
+    }, 
+    {
+      "clinic_city": "Bandra", 
+      "clinic_lat": 19.0552, 
+      "clinic_long": 72.8299, 
+      "clinic_name": "Merchant Cardiac Clinic"
+    }, 
+    {
+      "clinic_city": "Thane", 
+      "clinic_lat": 19.2284, 
+      "clinic_long": 72.9756, 
+      "clinic_name": "Dr. Amonkars Cardiac Clinic"
+    }, 
+    {
+      "clinic_city": "Andheri", 
+      "clinic_lat": 19.1376, 
+      "clinic_long": 72.8259, 
+      "clinic_name": "Aaradhya Cardiac Care"
+    }, 
+    {
+      "clinic_city": "Dadar", 
+      "clinic_lat": 19.0157, 
+      "clinic_long": 72.844, 
+      "clinic_name": "Pulse Cardiac Center"
+    }, 
+    {
+      "clinic_city": "Sanpada", 
+      "clinic_lat": 19.0626, 
+      "clinic_long": 73.0025, 
+      "clinic_name": "H2H Cardiac Center"
+    }, 
+    {
+      "clinic_city": "Nerul", 
+      "clinic_lat": 19.0336, 
+      "clinic_long": 73.0169, 
+      "clinic_name": "Soham Clinic & Cardiac Diagnostic Center"
+    }
+  ], 
+  "user_input": {
+    "distance_in_kms": 100, 
+    "latitude": 19.4522, 
+    "longitude": 72.8078
+  }
+}
