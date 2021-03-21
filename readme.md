@@ -8,6 +8,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
 
 ```bash
 pip install -r requirements.txt
+./run_flask_linux.sh # if using linux
+./run_flask.bat # if windows
 ```
 
 ## Usage
